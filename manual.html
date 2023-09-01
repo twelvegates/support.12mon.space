@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲーム配信すきー|12mon.space</title>
+    <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet"href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" />
+
+
+</head>
+
+<body data-spy="scroll" data-target="#toc">
+<!-- fontawesome -->
+<!-- グローバルナビゲーション -->
+<div class="bg-light container-fluid">
+   <nav class="container navbar navbar-expand-lg navbar-light">
+      <!-- ブランドロゴ Image and text -->
+      <a class="navbar-brand" href="index.html">
+         <img src="https://file-storage.12mon.space/file/fb94e895-9313-48cd-9864-e9c55280aa88.png" alt="" width="70" height="70" />
+         ゲーム配信すきー
+      </a>
+
+      <!-- toggler (ハンバーガーメニューのボタン) -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- スマホ画面では隠れるメニュー -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <!-- メニューリスト -->
+         <ul class="navbar-nav text-center mr-auto">
+            <li class="nav-item ml-3">
+               <a class="nav-link" href="index.html">ホーム</a>
+            </li>
+            <li class="nav-item ml-3">
+               <a class="nav-link" href="settings.html">カスタマイズ<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ml-3 active">
+               <a class="nav-link" href="manual.html">マニュアル</a>
+            </li>
+            <li class="nav-item ml-3">
+               <a class="nav-link" href="contact.html">管理人について</a>
+            </li>
+         </ul>
+         <!-- ログインと会員登録ボタン -->
+         <ul class="navbar-nav text-center">
+            <li class="nav-item ml-3">
+               <a class="btn btn-outline-secondary" href="https://misskey.12mon.space">Misskeyログイン</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+</div>
+
+
+
+<!-- Contents Middle -->
+<!-- container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+        </div>
+
+        <div class="col-sm-9">
+            <h1>Misskey設定マニュアル</h1>
+            <p>質問する前にマニュアル見てね</p>
+            <h2> 基本設定</h2>
+            <h3>アイコンの変更</h3>
+            <ol>
+                <li class="bg-light">設定 → プロフィール → アイコン画像を変更</li>
+                <li>アップロード → アイコンにする画像を選んで完了</li>
+                <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/6abb089d-cc1f-4b7d-97e2-1bf5ad54374e.webp" alt="" class="img-fluid">
+            </ol>
+
+            <h3>プロフィールの変更</h3>
+            <p>下記が変更可能なプロフィール情報です。</p>
+            <ul>
+                <li>名前</li>
+                <li>自己紹介</li>
+                <li>場所</li>
+                <li>誕生日</li>
+                <li>言語</li>
+                <li>追加情報</li>
+                <li>高度な設定</li>
+                <li>リアクションの受け入れ</li>
+            </ul>
+
+            <p>※追加情報には、自分のサイトやSNSを入れることができる。設定項目は下記です。</p>
+            <ul>
+                <li>ラベル: 任意の名前</li>
+                <li>内容: URLなど</li>
+            </ul>
+
+            <p>※高度な設定は下記2つの項目があります。</p>
+            <ul>
+                <li>にゃああああああああああああああ！！！！！！！！！！
+                    ※何が起こるかはご自身で体験ください。</li>
+                <li>Botとして設定: <strong>※通常は設定しない</strong></li>
+            </ul>
+
+            <h3>プライバシー設定</h3>
+            <p>プライバシー設定では、公開したくないノートやつながり、オンラインの状態、フォローを承認制にするセッティングが出来ます。</p>
+            <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/3c91a045-46d8-4a36-a8a6-6adc145068e0.webp" alt="" class="img-fluid">
+            <p><strong>特に設定を確認しておくべきところ</strong></p>
+            <ul>
+               <li>フォローを承認制にする</li>
+               <li>オンライン状態を表示</li>
+               <li>デフォルトの公開範囲</li>
+            </ul>
+            <p><strong>※デフォルトの公開範囲</strong>は<strong class="text-info">パブリック</strong>で設定されています。</p>
+            <p><strong class="text-info">パブリック</strong>は当サーバーだけでなく、連合している数千のサーバーにも配信されますのでご注意ください。</p>
+
+            <h3>リアクション</h3>
+            <p>リアクションはTwitterにおける「いいね」と同じです。しかし、Misskeyではサーバー独自のカスタム絵文字を利用することができます。</p>
+            <p><span class="bg-light">設定 → リアクション</span>ではカスタム絵文字選択ポップアップの大きさ、列、高さを設定します。お好みで設定してください。</p>
+            <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/d6edde24-dca8-4fe0-9e57-82dc7f90948f.webp" alt="" class="img-fluid">
+
+            <h3>ドライブ</h3>
+            <p>サーバーの各ユーザーには、割り当てられたドライブストレージの容量があります。過剰な画像・動画によりストレージがひっ迫するのを避けるため、300MBが上限に設定されています。
+               ユーザーには、ストレージ範囲内で画像・動画の投稿をしていただきます。
+            </p>
+            <p>ドライブ設定では、下記のことが行えます。</p>
+               <ul>
+                  <li>アップロードした画像・動画ファイルの管理</li>
+                  <li>残容量のチェック</li>
+                  <li>ドライブ内の不要なデータの削除</li>
+               </ul>
+            <p>ドライブ内の不要なデータを削除するためには、<strong>ドライブクリーナー</strong>から行います。</p>
+            
+            <h3>通知設定</h3>
+            <p>Misskey内のあらゆるアクションに対して、自分に通知を行うかどうかの設定ができます。</p>
+            <p class="bg-light"><strong>設定 → 通知 → 通知設定</strong>よりフォロー、メンションなどが発生した場合の挙動を設定します。</p>
+            <p>※<strong class="bg-light">プッシュ通知</strong>：PC・スマホのブラウザに対して、メッセージや音による通知を許可する設定です。</p>
+            
+            <h3>メール</h3>
+            <p class="bg-light">詳しくは<a href="settings.html"><strong>メール設定</strong></a>から設定方法を確認してください。</p>
+
+            <h3>セキュリティ設定</h3>
+            <p><strong class="text-info">ログインパスワード</strong>、<strong class="text-info">authenticatorを使った二段階認証</strong>を設定できます。</p>
+            <p>また、<strong class="text-info">ログイン履歴</strong>の確認もできます。</p>
+            <h4>パスワードの変更</h4>
+            <p><strong>設定 → セキュリティ → パスワード</strong>から、<span class="text-white bg-success">パスワードを変更</span>をクリック</p>
+            <p>※パスワードは確認入力がありません。急いで入力してEnter押すと詰むので、気を付けてください。</p>
+            <h4>Google Authenticatorを使った二段階認証</h4>
+            <p class="bg-light">詳しくは<a href="https://support.google.com/accounts/answer/1066447?hl=ja&co=GENIE.Platform%3DAndroid"><strong>Google 認証システムで確認コードを取得する</strong></a>から設定方法を確認してください</p>
+            
+            <h2>クライアント設定</h2>
+            <h3>全般設定</h3>
+            <p>下記の項目設定を行うことができます
+            </p>
+            <ul>
+               <li>UIの表示言語: Misskeyで使う言語</li>
+               <li>表示デバイスタイプ</li>
+               <li>TL上への投稿フォーム表示</li>
+               <li>ノートの表示</li>
+               <li>通知の表示設定</li>
+               <li>サーバー情報表示</li>
+               <li>センシティブなメディアの表示</li>
+               <li>画像が1枚のノート表示</li>
+               <li>アピアランス(外観)表示</li>
+               <li>絵文字のスタイル</li>
+               <li>フォントサイズ</li>
+               <li>サーバーとの接続が失われたときの通知表示</li>
+               <li>ページキャッシュ数</li>
+               <li>カスタムcss ※cssの知識がある方のみ</li>
+            </ul>
+            
+            <h3>テーマ</h3>
+            <p>テーマを変更したり、好きなテーマをダウンロードして自分の環境に適用する設定ができます。</p>
+            <h4>テーマの変更・ダウンロード方法</h4>
+            <ul>
+               <li>プリインストールされているテーマは、プルダウンリストから選んですぐに適用できます。</li>
+               <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/fbbba1ea-6458-4a3f-9b9d-9b0693ab9fe2.png" class="img-fluid" alt="">
+               <li>テーマを探して、自分の環境に反映させることもできます。</li>
+                  <ol>
+                     <li><a href="https://assets.misskey.io/theme/list">MiAS Theme List</a>で使いたいテーマのコードをCopy
+                        <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/8ff866a0-5e70-493a-bf0c-9a3e589622dc.webp" alt="" class="img-fluid"></li>
+                     <li>テーマのインストール</li>
+                        <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/a83d2fb3-8f58-4568-99df-9052babdef2e.png" alt="" class="img-fluid">
+                     <li>Copyしたテーマコードを貼り付け</li> 
+                        <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/2e5839e2-7d4c-4349-b51b-14ed0ed7f7ac.webp" alt="" class="img-fluid">
+                     <li>インストール</li>
+                        <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/6a31b8cf-3179-44e2-9488-71d752758312.webp" alt="" class="img-fluid">
+                  </ol>
+            </ul>
+
+            <h3>ナビゲーションバー</h3>
+            <p>ナビゲーションバーの構成、表示位置を設定します。(※デフォルトは一番左に表示)</p>
+            <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/781a351c-4ab7-4bf3-9e4e-c56200b523ab.webp" alt="" class="img-fluid">
+
+            <h3>ステータスバー</h3>
+            <p>Federation(連合中のリモートサーバー)やRSSを流せる設定ができます。</p>
+            <p><span class="bg-light">追加 → タイプ - Fererationを設定すると下記のようになります。</span></p>
+            <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/a128c01c-56bd-4210-8e43-2d66011f75d4.webp" alt="" class="img-fluid">
+
+            <h3>サウンド</h3>
+            <p>ノートが流れてきたとき、通知を受け取ったときのサウンドを自由に設定できます。</p>
+            <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/2e8ee0d9-244c-483f-be6b-eacc8663c1c5.webp" alt="" class="img-fluid">
+
+            <h3>プラグイン</h3>
+            <p>プラグインを入れることで処理の自動化を行ったり、Misskeyの通常の挙動を変更したりできます。</p>
+            <p>※JavaScriptやAPIに詳しくない方の操作は非推奨です。</p>
+
+            <h2>その他の設定</h2>
+            <h3>ロール</h3>
+            <p>自分に割り当てられたロールと権限が確認できます。</p>
+            <p>※管理者以外は基本的に変わらない権限設定をしています。</p>
+
+            <h3>サーバーミュート</h3>
+            <p>リモートサーバーの中でミュートしたいサーバーのURLを入力することで設定できます。サーバーとそのユーザーの全ての投稿がミュートになります</p>
+            <p>エンターキーで改行すれば複数のサーバーを設定できます。</p>
+            <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/ecc2a31a-9c49-4010-8708-44dd735c959d.webp" alt="" class="img-fluid">
+
+            <h3>ミュートとブロック</h3>
+            <p><strong>ミュート、Renoteのミュート、ブロック</strong>は<strong>該当ユーザーのページ</strong>で行います</p>
+            <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/ae8a56c4-efe9-46b0-90b4-f74db18910b8.webp" alt="" class="img-fluid">
+
+            <h3>ワードミュート</h3>
+            <p>指定ワードのノートをタイムラインに表示しないようにする設定です。下記2つの設定があります。</p>
+            <ul>
+               <li><strong>ソフトワードミュート:</strong> 指定したワードを含むノートをTLから隠す</li>
+               <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/cb816b00-1917-4f4e-97b1-bdd2dfa77416.webp" alt="" class="img-fluid">
+               <li><strong>ハードワードミュート:</strong> 指定したワードをTLから除外し、条件解除してもしばらくTL反映されない</li>
+               <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/ef347cd9-3c71-4159-805f-08ff7959581a.webp" alt="" class="img-fluid">
+            </ul>
+
+            <h3>API</h3>
+            <p>Application Programming Interface。ソフトウェアにAPIという外部とやりとりする窓口を作り、
+               外部アプリとコミュニケーションや連携ができる状態にすること。サードパーティのmisskeyアプリとかで使います。</p>
+               <p class="bg-light">詳しくは<a href="settings.html"><strong>スマホアプリを使う</strong></a>から設定方法を確認してください。</p>
+            
+            <h3>Webhook</h3>
+            <p class="bg-light">詳しくは<a href="https://misskey-hub.net/docs/features/webhook.html"><strong>Webhook(Misskey公式)</strong></a>から設定方法を確認してください。</p>
+
+            <h3>インポートとエクスポート</h3>
+            <p>投稿したノート、フォロー、リスト、チャンネル、自分が行った各種設定値のインポート、エクスポートができます。</p>
+            <p>下記がインポート、エクスポート可能なデータの一覧です。</p>
+               <ul>
+                  <li>全てのノート</li>
+                  <li>お気に入りしたノート</li>
+                  <li>フォロー</li>
+                  <li>リスト</li>
+                  <li>ミュート</li>
+                  <li>ブロック</li>
+                  <li>アンテナ</li>
+               </ul>
+            <p>インポート・エクスポートは<strong>JSON形式</strong>です。</p>
+
+            <h3>アカウントの移行</h3>
+            <p>Misskeyではアカウントの移行をすることで、Twitterのように新規にアカウントを作り直したら今までのデータが飛ぶようなことはありません。</p>
+            <p>アカウントの移行方法は2つあります。</p>
+            <ol>
+               <li>別のアカウントからこのアカウントに移行</li>
+               <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/d04de3ba-9145-4fd2-a81f-d698c1439a5a.webp" alt="" class="img-fluid">
+               <li>このアカウントを新しいアカウントへ移行</li>
+               <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/3be6ff19-ba0e-4475-9c56-49f2dac6a78a.webp" alt="" class="img-fluid">
+            </ol>
+            
+            <h3>その他</h3>
+            <p>アカウント情報の確認、<strong class="text-info">アカウントの閉鎖</strong>が行えます。</p>
+            <p>(例) アカウントを閉鎖する</p>
+            <img src="https://file-r2-20230831.12mon.space/file-r2-20230831/cfe9352c-0fcb-4ca8-945a-0f9f1b9da132.webp" alt="" class="img-fluid">
+
+            <h2>わからないこと・エラーがあるとき</h2>
+            <ol>
+               <li>管理者へ質問してみる</li>
+                  <ul>
+                     <li><a href="https://misskey.12mon.space/@kyoukei">@kyoukei</a></li>
+                     <li><a href="https://misskey.12mon.space/@kei">@kei</a></li>
+                  </ul>
+               <li>GitHubでIssueを立てる</li>
+                  <ul>
+                     <li><a href="https://github.com/twelvegates/support.12mon.space/issues">Issue立てる</a></li>
+                     <p>※GitHubアカウントが必要</p>
+                  </ul>
+               <li><a href="https://misskey.12mon.space/channels/9j1n2kjwkq">技術班(情報)チャンネル</a>にノートを投げる</li>   
+            </ol>      
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Conversion Button Area-->
+<div class="bg-warning mt-5">
+   <div class="container text-center p-5">
+      <p class="text-white">楽しくMisskeyやりましょう</p>
+      <p class="text-white pt-2">Think yourself</p>
+      <!-- Button
+      <a href="" class="btn btn-warning font-weight-bold mt-3">コミュニティに参加する</a>
+       -->
+   </div>
+</div>
+<!-- footer -->
+<div class="footer my-3">
+   <div class="container">
+      <div class="text-center">
+         <div class="nothing">
+         <a href="https://www.youtube.com/@SANZOKUCHANNEL" ><img src="https://file-r2-20230831.12mon.space/file-r2-20230831/f8bcff57-7635-48bb-a5a8-1eccdeb05118.png" alt="" class="img-fluid m-3" width="50" height="50"></a>
+         <a href="https://twitter.com/sanzokuchanel"><img src="https://file-r2-20230831.12mon.space/file-r2-20230831/15827e5f-ad74-43b8-bd07-7a879a6ced2b.png" alt="" class="img-fluid m-3" width="50" height="50"></a>
+         <a href="https://github.com/twelvegates/support.12mon.space"><img src="https://file-r2-20230831.12mon.space/file-r2-20230831/da1f8e8d-52f3-47dd-973f-e3f8b2cc94b0.webp" alt="" class="img-fluid m-3" width="50" height="50"></a>
+         <a href="https://misskey.12mon.space/"><img src="https://file-r2-20230831.12mon.space/file-r2-20230831/431e84fa-d7de-4650-b87a-364798f23df3.png" alt="" class="img-fluid m-3" width="50" height="60"></a>
+         </div>
+         <p><small>Copyright © 2023 Misskey.12mon.space</small></p>
+      </div>
+   </div>
+</div>
+
+<!-- ナビバーを動かすためのjs -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
+
+</body>
+</html>
